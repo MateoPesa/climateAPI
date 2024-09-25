@@ -1,0 +1,34 @@
+Type: Package
+Package: climateAPI
+Title: Weather Data Analysis
+Version: 0.1.0
+Author: person("Mateo","Pesa",
+    email="msp256@cornell.edu",role=c("aut","cre"))
+Maintainer: Mateo Pesa <msp256@cornell.edu>
+Description: climateAPI is a package designed to analyze data from the US
+    Climate Reference Network (USCRN), which is a set of high quality
+    weather stations maintained by the National Centers for Environmental
+    Information (NCEI) within the National Oceanic and Atmospheric
+    Administration (NOAA).  It primarily focuses on analyzing stations
+    around America, interpolating data from these stations to account for
+    the entire contiguous USA, and looking at yearly patterns and data for
+    all of America.
+License: GPL-2
+Imports:
+    dplyr,
+    ggplot2,
+    GpGp,
+    maps,
+    usethis
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: 
+    knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: 
+    R (>= 2.10)
